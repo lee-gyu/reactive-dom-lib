@@ -1,0 +1,12 @@
+{
+    "name": "@lee-gyu/reactive-dom-lib-core",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lib/esm/index.js",
+    "scripts": {
+        "dev": "tsc --watch"
+    },
+    "keywords": [],
+    "author": "Lee Gyu Cheol <leegyu4dev@gmail.com>",
+    "license": "MIT"
+}
