@@ -1,13 +1,13 @@
-type ComponentArgs<T_State extends object> = {
-    tag: string;
-    state: T_State;
+type ComponentProps = {
+    className?: string;
+    children: unknown[];
 };
 
 export function component<T_State extends object>(
-    args: ComponentArgs<T_State>
+    tagName: string,
+    props: ComponentProps
 ) {
-    const { tag } = args;
-    const element = document.createElement(tag);
+    const element = document.createElement(tagName);
 
     return {
         updateState,
@@ -16,7 +16,6 @@ export function component<T_State extends object>(
     function render() {}
 
     function updateState(newState: Partial<T_State>) {
-        Object.assign(args.state, newState);
         render();
     }
 }

@@ -7,6 +7,8 @@
         "outDir": ".dist/",
         "declaration": true,
         "declarationMap": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "@lee-gyu/reactive-dom-lib-core",
     }
 }

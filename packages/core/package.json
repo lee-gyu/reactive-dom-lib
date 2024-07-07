@@ -3,6 +3,14 @@
     "version": "1.0.0",
     "description": "",
     "main": "lib/esm/index.js",
+    "exports": {
+        ".": {
+            "default": "./lib/esm/index.js"
+        },
+        "./jsx-runtime": {
+            "default": "./lib/esm/jsx-runtime.js"
+        }
+    },
     "scripts": {
         "dev": "tsc --watch"
     },

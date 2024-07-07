@@ -2,6 +2,10 @@
     "extends": "../config/tsconfig.base.json",
     "compilerOptions": {
         "baseUrl": "./",
+        "rootDir": "./src/",
         "outDir": "lib/esm/"
-    }
+    },
+    "include": [
+        "src/**/*"
+    ]
 }
